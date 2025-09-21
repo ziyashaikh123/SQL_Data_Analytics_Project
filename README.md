@@ -91,4 +91,4 @@ This project simulates **real-world retail analytics** and demonstrates how to:
 
 ## 👩‍💻 Author  
 **Aashiya Ziya Shaikh** ✨  
-📍 Aspiring Data Analyst | Skilled in SQL & Business Analytics  
+📍 Aspiring Data Analyst   
