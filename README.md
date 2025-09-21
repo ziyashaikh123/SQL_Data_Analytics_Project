@@ -1,25 +1,94 @@
-SQL_Data_Analytics_Project
+# 🛒  Sales Analytics Project  
 
-📊 SQL Analytics & Reporting Scripts
+## ✨ Project Overview  
+This project focuses on analyzing **retail sales, customer, and product data** using **MySQL (SQL)**.  
+The goal is to extract **actionable business insights** that help in decision-making, including:  
 
-This project is a collection of SQL queries designed for data exploration, analytics, and reporting.
-It helps data analysts, BI professionals, and learners quickly analyze datasets and uncover insights without writing queries from scratch.
+📈 Sales trends over time  
+🧑‍🤝‍🧑 Customer segmentation & spending behavior  
+📦 Product & category performance  
+📊 Key performance indicators (KPIs)  
 
-The scripts demonstrate best practices in SQL and cover:
+It demonstrates advanced SQL techniques like **window functions, CTEs, and views** to solve real-world business problems.  
 
-🔎 Database exploration – understanding tables, columns, and relationships
+---
 
-📈 Time-based trends – analyzing growth over days, months, or years
+## 🗂️ Dataset Structure  
+The project uses a **Star Schema**:  
 
-➕ Cumulative analytics – tracking running totals and progress
+- **`fact_sales`** → transactional sales data  
+- **`dim_customers`** → customer details  
+- **`dim_products`** → product attributes  
 
-🧮 Key metrics – calculating averages, counts, ratios, and KPIs
+---
 
-🧩 Segmentation – breaking data into categories like region, product, or customer group
+## 📊 Analysis Performed  
 
-📑 Reporting queries – generating summaries for dashboards and business reports
+### 🔹 1. Change Over Time Trends  
+✔ Sales by **Year**  
+✔ Sales by **Month**  
+✔ Combined **Year + Month** analysis  
+✔ **Running totals** & **Moving averages**  
 
-Each query focuses on a specific analytical theme and can be adapted for any relational database.
-This project is implemented using MySQL.
+### 🔹 2. Performance Analysis  
+✔ **Year-over-Year (YoY)** sales growth  
+✔ Product performance vs **average sales**  
+✔ Growth/decline detection using **LAG()**  
 
-🙏 Special thanks to Data with Baraa for guidance and inspiration.
+### 🔹 3. Part-to-Whole Analysis  
+✔ Contribution of each **category** to total sales  
+✔ Ranking categories by **revenue share**  
+
+### 🔹 4. Data Segmentation  
+📦 **Product Segmentation** (by price ranges):  
+- Below 100  
+- 100–500  
+- 500–1000  
+- Above 1000  
+
+🧑‍🤝‍🧑 **Customer Segmentation** (based on spending & lifespan):  
+- **VIP** → ≥ 12 months + spending > 5000  
+- **Regular** → ≥ 12 months + spending ≤ 5000  
+- **New** → lifespan < 12 months  
+
+### 🔹 5. Customer Report (Final View)  
+A consolidated **customer-level analytics report**:  
+- Profile → name, age, age group, segment  
+- Orders, total sales, products purchased, lifespan  
+- KPIs → **recency, average order value, monthly spend**  
+
+---
+
+## 🛠️ Skills & Techniques Applied  
+✅ SQL **Aggregations & Grouping**  
+✅ **Window Functions** → `SUM() OVER`, `AVG() OVER`, `LAG()`  
+✅ **CTEs (Common Table Expressions)**  
+✅ **Views** for reporting  
+✅ Analytics Approaches:  
+   - Trend Analysis  
+   - Part-to-Whole Analysis  
+   - Performance Benchmarking  
+   - Segmentation & Profiling  
+
+---
+
+## 🚀 Key Takeaways  
+This project simulates **real-world retail analytics** and demonstrates how to:  
+
+✔ Transform raw transactional data into **business insights**  
+✔ Identify **customer patterns & behaviors**  
+✔ Track **product & category performance**  
+✔ Build a **ready-to-use report** for BI dashboards  
+
+---
+
+## 🔮 Next Steps  
+📌 Add **data visualizations** using Tableau / Power BI / Python (Matplotlib, Seaborn).  
+📌 Automate reporting pipelines for real-time analytics.  
+📌 Extend with **predictive analytics** (e.g., customer churn, product demand).  
+
+---
+
+## 👩‍💻 Author  
+**Aashiya Ziya Shaikh** ✨  
+📍 Aspiring Data Analyst | Skilled in SQL & Business Analytics  
